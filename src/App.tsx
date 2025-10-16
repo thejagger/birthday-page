@@ -1,8 +1,7 @@
 import { Header } from "./components/Header";
 import { Hero } from "./components/Hero";
-import { Screenshots } from "./components/Screenshots";
 import { Footer } from "./components/Footer";
-import {CarouselImages} from "@/components/CarouselImages.tsx";
+import {Gallery} from "./components/Gallery";
 
 function App() {
   return (
@@ -10,8 +9,7 @@ function App() {
       <Header />
       <main>
         <Hero />
-        <Screenshots />
-        <CarouselImages />
+        <Gallery />
       </main>
       <Footer />
     </div>
