@@ -1,7 +1,6 @@
 import { Moon, Sun } from "lucide-react";
 import { Button } from "./ui/button";
 import { useTheme } from "./theme-provider";
-import { SignupDialog } from "./SignupDialog";
 
 export function Header() {
   const { theme, setTheme } = useTheme();
@@ -21,7 +20,6 @@ export function Header() {
           <h1 className="text-2xl font-bold">Tanjakob</h1>
         </div>
         <div className="flex items-center gap-2">
-          <SignupDialog />
           <Button
             variant="ghost"
             size="icon"

@@ -11,15 +11,20 @@ export function Gallery() {
       <div className="grid grid-cols-2 sm:grid-cols-3 gap-6">
         {imageUrls.map((imageUrl, index) => {
           const url = imageUrl.default;
+
+          let className = "bg-muted rounded-lg";
+          if (index === 3 || index === 5 || index === 13 || index === 16) {
+            className += " sm:col-span-2 aspect-square sm:aspect-2/1"
+          } else {
+            className += " aspect-square"
+          }
+
           return (
-            <div
-              key={url}
-              className={`aspect-square w-full overflow-hidden rounded-md bg-muted`}
-            >
+            <div className={className}>
               <img
                 src={url}
                 alt={`Gallery image ${index + 1}`}
-                className="h-full w-full rounded-md object-cover"
+                className="h-full w-full rounded-lg object-cover"
                 loading="lazy"
               />
             </div>
