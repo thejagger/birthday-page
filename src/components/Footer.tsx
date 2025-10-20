@@ -25,7 +25,8 @@ export function AlertDialogPrivacyPolicy() {
         </AlertDialogTrigger>
         <AlertDialogContent>
           <AlertDialogHeader>
-            <AlertDialogTitle>Did you really think that we will add a fucking Privacy Policy?</AlertDialogTitle>
+            <AlertDialogTitle>Did you really think that we will add a fucking Privacy
+              Policy?</AlertDialogTitle>
             <AlertDialogDescription>
               Anyway while you are here, you can read our Privacy Policy not here.
             </AlertDialogDescription>
@@ -57,14 +58,16 @@ export function AlertDialogTermsService() {
               If you like what you see, just download the app.
               <div className="flex flex-col gap-4 sm:flex-row mt-4 justify-center">
                 <Button size="lg" className="gap-2" asChild>
-                  <a href="https://apps.apple.com/us/app/deun/id6742751703" aria-label="Download on the App Store">
+                  <a href="https://apps.apple.com/us/app/deun/id6742751703"
+                     aria-label="Download on the App Store">
                     <Apple className="h-5 w-5"/>
                     App Store
                   </a>
                 </Button>
 
                 <Button size="lg" variant="outline" className="gap-2" asChild>
-                  <a href="https://play.google.com/store/apps/details?id=app.deun.www" aria-label="Get it on Google Play">
+                  <a href="https://play.google.com/store/apps/details?id=app.deun.www"
+                     aria-label="Get it on Google Play">
                     <Play className="h-5 w-5"/>
                     Google Play
                   </a>
@@ -91,8 +94,8 @@ export function Footer() {
             </p>
 
             <nav className="flex gap-6">
-              <AlertDialogPrivacyPolicy />
-              <AlertDialogTermsService />
+              <AlertDialogPrivacyPolicy/>
+              <AlertDialogTermsService/>
             </nav>
           </div>
         </div>

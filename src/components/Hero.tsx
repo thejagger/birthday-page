@@ -1,5 +1,6 @@
 import {SignupDialog} from "./SignupDialog";
 import {Button} from "./ui/button";
+
 // @ts-ignore
 
 export function Hero() {
@@ -23,7 +24,9 @@ export function Hero() {
         <div className="relative mx-auto max-w-5xl">
           <div className="flex flex-col items-center gap-8 text-center">
             <div className="flex items-center gap-4">
-              <Button variant="outline" asChild><a href="./average30party.ics" download="average30party.ics">🗓️ Save the Date</a></Button>
+              <Button variant="outline" asChild><a href="./average30party.ics"
+                                                   download="average30party.ics">🗓️ Save
+                the Date</a></Button>
               <SignupDialog/>
             </div>
 

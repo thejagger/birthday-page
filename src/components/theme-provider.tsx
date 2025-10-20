@@ -1,4 +1,4 @@
-import { createContext, useContext, useEffect, useState } from "react";
+import {createContext, useContext, useEffect, useState} from "react";
 
 type Theme = "dark" | "light" | "system";
 
@@ -21,13 +21,13 @@ const initialState: ThemeProviderState = {
 const ThemeProviderContext = createContext<ThemeProviderState>(initialState);
 
 export function ThemeProvider({
-  children,
-  defaultTheme = "system",
-  storageKey = "deun-theme",
-  ...props
-}: ThemeProviderProps) {
+                                children,
+                                defaultTheme = "system",
+                                storageKey = "deun-theme",
+                                ...props
+                              }: ThemeProviderProps) {
   const [theme, setTheme] = useState<Theme>(
-    () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
+      () => (localStorage.getItem(storageKey) as Theme) || defaultTheme
   );
 
   useEffect(() => {
@@ -37,9 +37,9 @@ export function ThemeProvider({
 
     if (theme === "system") {
       const systemTheme = window.matchMedia("(prefers-color-scheme: dark)")
-        .matches
-        ? "dark"
-        : "light";
+          .matches
+          ? "dark"
+          : "light";
 
       root.classList.add(systemTheme);
       return;
@@ -57,9 +57,9 @@ export function ThemeProvider({
   };
 
   return (
-    <ThemeProviderContext.Provider {...props} value={value}>
-      {children}
-    </ThemeProviderContext.Provider>
+      <ThemeProviderContext.Provider {...props} value={value}>
+        {children}
+      </ThemeProviderContext.Provider>
   );
 }
 
