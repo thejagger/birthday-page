@@ -95,12 +95,14 @@ export function Hero() {
             </p>
 
             <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Let us know if you will join our celebration, ideally by November 21st (if you’re not sure if you RSVP-d already, just do it again).
+              Let us know if you will join our celebration, ideally by November 21st (if you’re not sure if you RSVP-d already, just pls do it again).
             </p>
             <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
               We are looking forward to celebrating with you!!
-              Tanja & Jakob
             </p>
+            <h2 className="bg-gradient-to-r from-fuchsia-600 via-rose-500 to-amber-500 bg-clip-text text-4xl font-extrabold tracking-tight text-transparent sm:text-xl md:text-1xl lg:text-2xl leading-[1.5]">
+              Tanja & Jakob
+            </h2>
 
             <div className="flex items-center gap-4 text-2xl text-amber-500">
               <span className="animate-pulse">✨</span>
