@@ -44,6 +44,11 @@ export function SignupDialog() {
     reset,
   } = useForm<SignupFormData>({
     resolver: zodResolver(signupSchema),
+    defaultValues: {
+      name: "",
+      amount: 1,
+      description: "",
+    },
   });
 
   // Check if user has already signed up
@@ -158,7 +163,6 @@ export function SignupDialog() {
                   <Input
                       id="amount"
                       type="number"
-                      value="1"
                       min="1"
                       placeholder="1"
                       {...register("amount")}
