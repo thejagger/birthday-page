@@ -95,7 +95,7 @@ export function Hero() {
             </p>
 
             <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
-              Let us know if you will join our celebration, ideally by November 21st (if you’re not sure if you RSVP-d already, just pls do it again).
+              Let us know if you will join our celebration, ideally by November 30th (if you’re not sure if you RSVP-d already, just pls do it again).
             </p>
             <p className="max-w-2xl text-lg text-muted-foreground sm:text-xl">
               We are looking forward to celebrating with you!!
